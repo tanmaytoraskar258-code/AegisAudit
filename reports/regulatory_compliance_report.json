@@ -1,0 +1,86 @@
+{
+    "report_metadata": {
+        "framework_version": "Omniaudit Governance Engine v1.0",
+        "export_timestamp": "2026-10-04T12:13:27.187976",
+        "cryptographic_chain_verified": true,
+        "total_logged_nodes": 4,
+        "flagged_risk_anomalies": 2,
+        "regulatory_scope": [
+            "EU_AI_ACT_ART_10",
+            "ISO_42001_AI_GOVERNANCE"
+        ]
+    },
+    "immutable_ledger_trail": [
+        {
+            "decision_id": "NODE-REC-001",
+            "parent_id": null,
+            "decision_block": "Advance applicant to engineering final loops.",
+            "model_certainty": 0.91,
+            "timestamp_utc": "2026-10-04T11:57:40.441103",
+            "environment_metadata": {
+                "domain": "recruitment",
+                "years_experience": 6,
+                "zip_code": "94043"
+            },
+            "compliance_flags": [
+                "EU_AI_ACT_HIGH_RISK_CONTEXT"
+            ],
+            "cryptographic_signature": "086c7eb25f7536b1040b12be968cec5f2b12afc1253ffc318a6e54e46a535363"
+        },
+        {
+            "decision_id": "FORK-3C6D55C3",
+            "parent_id": "NODE-REC-001",
+            "decision_block": "Reject applicant automatically due to system fallback threshold.",
+            "model_certainty": 0.58,
+            "timestamp_utc": "2026-10-04T11:57:40.642110",
+            "environment_metadata": {
+                "domain": "recruitment",
+                "policy_flagged": true,
+                "zip_code": "94043"
+            },
+            "compliance_flags": [
+                "LOW_CONFIDENCE_WARNING",
+                "POLICY_VIOLATION_ALERT",
+                "EU_AI_ACT_HIGH_RISK_CONTEXT"
+            ],
+            "cryptographic_signature": "a340f61c4ae3b9ae03018d4f590687db4c01fe9685c1ae2500300329504b922e"
+        },
+        {
+            "decision_id": "AGENT-0E10F9",
+            "parent_id": null,
+            "decision_block": "Recommendation: Process execution path smoothly for context: 'Evaluate senior system adminis...'",
+            "model_certainty": 0.92,
+            "timestamp_utc": "2026-10-04T12:11:51.721918",
+            "environment_metadata": {
+                "agent_orchestrator": "RiskAssessmentOrchestrator_v5",
+                "raw_prompt": "Evaluate senior system administrator profile for infrastructure clearance.",
+                "domain": "recruitment",
+                "policy_flagged": false,
+                "execution_latency_ms": 300
+            },
+            "compliance_flags": [
+                "EU_AI_ACT_HIGH_RISK_CONTEXT"
+            ],
+            "cryptographic_signature": "f261b89aff6e83b01f5a3972ddebd0a5e39f9d31e0262ac509e5d91f0f4a4d16"
+        },
+        {
+            "decision_id": "AGENT-63C88C",
+            "parent_id": "AGENT-0E10F9",
+            "decision_block": "Fallback Execution: Halt processing due to anomalous peripheral criteria.",
+            "model_certainty": 0.64,
+            "timestamp_utc": "2026-10-04T12:11:52.223645",
+            "environment_metadata": {
+                "agent_orchestrator": "RiskAssessmentOrchestrator_v5",
+                "raw_prompt": "Verify background biometrics parameters for validation code verification.",
+                "domain": "biometrics",
+                "policy_flagged": false,
+                "execution_latency_ms": 300
+            },
+            "compliance_flags": [
+                "LOW_CONFIDENCE_WARNING",
+                "EU_AI_ACT_HIGH_RISK_CONTEXT"
+            ],
+            "cryptographic_signature": "a5ea64ece1164cd3f5203aee3fd668cdb7d43db64abacfd244beab3afc27452c"
+        }
+    ]
+}

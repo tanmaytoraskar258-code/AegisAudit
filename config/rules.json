@@ -1,0 +1,16 @@
+{
+  "compliance_rules": {
+    "confidence_threshold": 0.75,
+    "high_risk_domains": [
+      "credit_scoring",
+      "biometrics",
+      "recruitment",
+      "autonomous_vehicles"
+    ],
+    "flag_severity_mappings": {
+      "LOW_CONFIDENCE_WARNING": "medium",
+      "POLICY_VIOLATION_ALERT": "high",
+      "EU_AI_ACT_HIGH_RISK_CONTEXT": "critical"
+    }
+  }
+}
